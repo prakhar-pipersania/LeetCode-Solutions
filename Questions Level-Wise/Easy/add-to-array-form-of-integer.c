@@ -1,0 +1,94 @@
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* addToArrayForm(int* A, int ASize, int K, int* returnSize)
+{
+    int i,j,k=0,*p,temp=K,KSize=0,y=0,z;
+    if(K==0)
+    {
+        p=(int*)calloc(sizeof(int),ASize);
+        for(i=0;i<ASize;i++)
+            p[i]=A[i];
+        *returnSize=ASize;
+        return p;
+    }
+    for(temp=K;temp>0;temp/=10)
+        KSize++;
+    if(KSize>=ASize)
+        i=KSize;
+    else
+        i=ASize;
+    p=(int*)calloc(sizeof(int),(i+1));
+    int KA[KSize];
+    j=KSize-1;
+    for(temp=K;temp>0;temp/=10)
+        KA[j--]=temp%10;
+    KSize--;ASize--;
+    if(KSize<=ASize)
+        i=KSize;
+    else
+        i=ASize;
+    while(i>=0)
+    {
+        z=y+A[ASize]+KA[KSize]; 
+        if(z>9)
+        {
+            p[k]=z%10;
+            y=z/10;
+        }
+        else
+        {
+            y=0;
+            p[k]=z;
+        }
+        k++;ASize--;KSize--;i--;
+    }
+    if(KSize>=0)
+    {
+        while(KSize>=0)
+        {
+            z=y+KA[KSize]; 
+            if(z>9)
+            {
+                p[k]=z%10;
+                y=z/10;
+            }
+            else
+            {
+                y=0;
+                p[k]=z;
+            }
+            k++;KSize--;
+        }
+    }
+    else if(ASize>=0)
+    {
+        while(ASize>=0)
+        {
+            z=y+A[ASize]; 
+            if(z>9)
+            {
+                p[k]=z%10;
+                y=z/10;
+            }
+            else
+            {
+                y=0;
+                p[k]=z;
+            }
+            k++;ASize--;
+        }
+    }
+    if(y>0)
+        p[k++]+=1;
+    j=k-1;
+    for(i=0;i<k/2;i++)
+    {
+       temp=p[i];
+        p[i]=p[j];
+        p[j]=temp;
+        j--;
+    } 
+    *returnSize=k;
+    return p;
+}

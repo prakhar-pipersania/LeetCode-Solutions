@@ -1,0 +1,95 @@
+char * addBinary(char * a, char * b)
+{
+    int s1,s2,i,j,k=0,z,y=0;
+    char *p,temp;
+    s1=strlen(a);
+    s2=strlen(b);
+    if(s1>=s2)
+        i=s1;
+    else
+        i=s2;
+    p=(char*)malloc(sizeof(char)*(i+2));
+    s1--;s2--;
+    if(s1<=s2)
+        i=s1;
+    else
+        i=s2;
+    while(i>=0)
+    {
+        z=y+a[s1]+b[s2]-96; 
+        if(z==3)
+        {
+            p[k]='1';
+            y=1;
+        }
+        else if(z==2)
+        {
+            p[k]='0';
+            y=1;
+        }
+        else
+        {
+            y=0;
+            p[k]='0'+z;
+        }
+        k++;s1--;s2--;i--;
+    }
+    if(s2>=0)
+    {
+        while(s2>=0)
+        {
+            z=y+b[s2]-48;
+            if(z==3)
+            {
+                p[k]='1';
+                y=1;
+            }
+            else if(z==2)
+            {
+                p[k]='0';
+                y=1;
+            }
+            else
+            {
+                y=0;
+                p[k]='0'+z;
+            }
+            k++;s2--;
+        }
+    }
+    else if(s1>=0)
+    {
+        while(s1>=0)
+        {
+            z=y+a[s1]-48; 
+            if(z==3)
+            {
+                p[k]='1';
+                y=1;
+            }
+            else if(z==2)
+            {
+                p[k]='0';
+                y=1;
+            }
+            else
+            {
+                y=0;
+                p[k]='0'+z;
+            }
+            k++;s1--;
+        }
+    }
+    if(y>0)
+        p[k++]='1';
+    p[k]='\0';
+    j=k-1;
+    for(i=0;i<k/2;i++)
+    {
+       temp=p[i];
+        p[i]=p[j];
+        p[j]=temp;
+        j--;
+    } 
+    return p;
+}

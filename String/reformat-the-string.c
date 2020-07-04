@@ -1,0 +1,81 @@
+char * reformat(char * s)
+{
+    int i=0,cn=0,ca=0,k=0;
+    while(s[i]!='\0')
+    {
+        if(s[i]>=48&&s[i]<=57)
+            cn++;
+        else
+            ca++;
+        i++;
+    }
+    char *a;
+    a=(char*)malloc(sizeof(char)*(i+1));
+    if(cn==ca)
+    {
+        for(i=0;s[i]!='\0';i++)
+        {
+            if(s[i]>=48&&s[i]<=57)
+            {
+                a[k]=s[i];
+                k+=2;
+            }
+        }
+        k=1;
+        for(i=0;s[i]!='\0';i++)
+        {
+            if(s[i]>=97&&s[i]<=122)
+            {
+                a[k]=s[i];
+                k+=2;
+            }
+        }
+        a[k-1]='\0';
+        return a;
+    }
+    if(cn-1==ca)
+    {
+        for(i=0;s[i]!='\0';i++)
+        {
+            if(s[i]>=48&&s[i]<=57)
+            {
+                a[k]=s[i];
+                k+=2;
+            }
+        }
+        a[k-1]='\0';
+        k=1;
+        for(i=0;s[i]!='\0';i++)
+        {
+            if(s[i]>=97&&s[i]<=122)
+            {
+                a[k]=s[i];
+                k+=2;
+            }
+        }
+        return a; 
+    }
+    if(cn+1==ca)
+    {
+        for(i=0;s[i]!='\0';i++)
+        {
+            if(s[i]>=97&&s[i]<=122)
+            {
+                a[k]=s[i];
+                k+=2;
+            }
+        }
+        a[k-1]='\0';
+        k=1;
+        for(i=0;s[i]!='\0';i++)
+        {
+            if(s[i]>=48&&s[i]<=57)
+            {
+                a[k]=s[i];
+                k+=2;
+            }
+        }
+        return a; 
+    }
+    return "";
+}
