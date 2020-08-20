@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/Language-C%20%2F%20C++-255fcc.svg)&nbsp;
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](./LICENSE)&nbsp;
 ![Update](https://img.shields.io/badge/Update-Monthly-purple.svg)&nbsp;
-![Progress](https://img.shields.io/badge/Progress-394%20%2F%201537-brightgreen.svg)&nbsp;
+![Progress](https://img.shields.io/badge/Progress-427%20%2F%201554-brightgreen.svg)&nbsp;
 
 * It’s a website where people-mostly Software Engineers-Practice their Coding Skills.
 * There are 1500+ questions, each with multiple solutions.
@@ -13,7 +13,7 @@
 ## Questions Ranked by Level of Difficulty
 
 * [![Easy](https://img.shields.io/badge/Easy%20254-63e13d.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Easy)
-* [![Medium](https://img.shields.io/badge/Medium%20136-ffcc00.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Medium)
+* [![Medium](https://img.shields.io/badge/Medium%20163-ffcc00.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Medium)
 * [![Hard](https://img.shields.io/badge/Hard%204-d30000.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Hard)
 
 ## Data-Structures&Algorithms
