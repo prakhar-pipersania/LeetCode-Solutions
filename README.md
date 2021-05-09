@@ -3,18 +3,18 @@
 ![Language](https://img.shields.io/badge/Language-C%20%2F%20C++-255fcc.svg)&nbsp;
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](./LICENSE)&nbsp;
 ![Update](https://img.shields.io/badge/Update-BiMonthly-purple.svg)&nbsp;
-![Progress](https://img.shields.io/badge/Progress-534%20%2F%201649-brightgreen.svg)&nbsp;
+![Progress](https://img.shields.io/badge/Progress-705%20%2F%201857-brightgreen.svg)&nbsp;
 
 * It’s a website where people-mostly Software Engineers-Practice their Coding Skills.
-* There are 1600+ questions, each with multiple solutions.
+* There are 1800+ questions, each with multiple solutions.
 * There are new LeetCode Solutions Bimonthly. I'll keep updating for better solutions.
 * Hope you enjoy the journey of learning Data-Structures & Algorithms, MySQL.
 
 ## Questions Ranked by Level of Difficulty
 
-* [![Easy](https://img.shields.io/badge/Easy%20291-63e13d.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Easy)
-* [![Medium](https://img.shields.io/badge/Medium%20235-ffcc00.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Medium)
-* [![Hard](https://img.shields.io/badge/Hard%208-d30000.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Hard)
+* [![Easy](https://img.shields.io/badge/Easy%20342-5CB85C.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Easy)
+* [![Medium](https://img.shields.io/badge/Medium%20350-FFA116.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Medium)
+* [![Hard](https://img.shields.io/badge/Hard%2013-D9534F.svg)](https://github.com/PrakharPipersania/LeetCode-Solutions/tree/master/Questions%20Level-Wise/Hard)
 
 ## Data-Structures&Algorithms
 
